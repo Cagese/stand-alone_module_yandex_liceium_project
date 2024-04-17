@@ -15,6 +15,7 @@ class Questions(SqlAlchemyBase, SerializerMixin):
     answer = sqlalchemy.Column(sqlalchemy.String, nullable=False)
     owner_id = sqlalchemy.Column(sqlalchemy.Integer, nullable=False)
     is_public = sqlalchemy.Column(sqlalchemy.Boolean, nullable=False,default=False)
+    api_access_key = sqlalchemy.Column(sqlalchemy.String,nullable=False)
 
 
 
